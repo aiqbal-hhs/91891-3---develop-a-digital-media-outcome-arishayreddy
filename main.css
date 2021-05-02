@@ -1,0 +1,201 @@
+html{ /* Beginning of sytle tag for the whole page. */
+    background-image: url("https://www.storm3d.com/wp-content/uploads/2018/maori_tattoo_designs/buy-high-resolution-maori-flash-tattoos/koru-maori-tattoo-curves-spirals-design-300x200.jpg");
+    font-family: 'Montserrat'; /* Font type no web page. */
+} /* End of sytle tag for the whole page. */
+
+
+h2{ /* Beginning of sytle tag for heading 2 locations. */
+    color: black; /* Colour of font. */
+    border-radius: 20px; /* How rounded the corner is. */
+    text-decoration: underline; /* Underlining the text selected. */
+    font-size: 50px; /* How big the size of the font is on the web page. */
+
+} /* End of sytle tag for heading 2 locations. */
+
+.buttonone { /* Beginning of sytle tag for the main buttons. */
+    background-color: #fff5;  /* Background colour. */
+    color: black; /* Colour of font. */
+    border-color: black;/* The colour of the button outline. */
+    font-size: 100%; /* How big the size of the font is on the web page. */
+    margin:0; /* Space around the elements e.g. space between other buttons. */
+    padding: 9px; /* How much space there is between the text and the border outline. */
+    cursor: pointer; /* A pointer to indicate there is a link, no change to code because it is a pointer. */
+    border-radius: 25px; /* How rounded the corner is. */
+} /* End of sytle tag for the main buttons. */
+button:hover { /* Beginning of sytle tag for the hover over the main buttons. */
+    opacity: 0.7; /* How faded the text is when hovered over. */
+} /* End of sytle tag for the hover over the main buttons. */
+.nav { /* Beginning of sytle tag for the other buttons. */
+    background-color: #fff5;  /* Background colour. */
+    opacity: 200%;
+    color: black; /* Colour of font. */
+    font-size: 100%; /* How big the size of the font is on the web page. */
+    margin: 7px; /* Space around the elements e.g. space between other buttons. */
+    padding: 0px 7px;  /* How much space there is between the text and the border outline. */
+    cursor: pointer; /* A pointer to indicate there is a link, no change to code because it is a pointer. */
+    border-radius: 25px; /* How rounded the corner is. */
+    display: inline-block; /* Prevent overlapping of buttons. */
+} /* End of sytle tag for the other buttons. */
+.nav:hover { /* Beginning of sytle tag for the hover over the other buttons. */
+    opacity: 0.7; /* How faded the text is when hovered over. */
+} /* End of sytle tag for the hover over the other buttons. */
+
+
+
+
+body{ /* Beginning of sytle tag for the body. */
+    text-align: center; /* Aligns the text to the requested location. */
+    color:black; /* Colour of font. */
+} /* End of sytle tag for the body. */
+
+.fa:hover { /* Beginning of sytle tag for the hover over the social media buttons. */
+    opacity: 0.7; /* How faded the text or button is when hovered over. */
+} /* End of sytle tag for the hover over the social media buttons. */
+
+.fa-facebook { /* Beginning of sytle tag for the Facebook button. */
+  background: #3B5998; /* Background colour. */
+  color: white; /* Colour of font. */
+} /* End of sytle tag for the Facebook button. */
+
+.fa-twitter { /* Beginning of sytle tag for the Twitter button. */
+  background: #55ACEE; /* Background colour. */
+  color: white; /* Colour of font. */
+} /* End of sytle tag for the Twitter button. */
+.fa-instagram {  /* Beginning of sytle tag for the Instagram button. */
+  background: #125688; /* Background colour. */
+  color: white; /* Colour of font. */
+} /* End of sytle tag for the Instagram button. */
+
+
+
+div.transbox { /* Beginning of sytle tag for transparent box in the body. */
+  margin: 0px; /* Space around the elements e.g. space between other buttons. */
+  background-color: #4677C8; /* Background colour. */
+border-radius: 60px; /* How rounded the corner is. */
+top:30%; /* Position of element. */
+left: 17%; /* Position of element. */
+    right: 17%; /* Position of element. */
+    bottom: 10%; /* Position of element. */
+    
+} /* End of sytle tag for transparent box in the body. */
+
+footer { /* Beginning of sytle tag for the footer of the page. */
+    color: black; /* Colour of font. */
+    background-color: #DEDEE0; /* Background colour. */
+    position: fixed; /* Position of element. */
+    bottom: 0; /* Position of element. */
+    width: 100%; /* Position of element. */
+    
+
+} /* End of sytle tag for the footer of the page. */
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#myBtn:hover {
+  background-color: darkblue;
+}
+
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darkblue;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create six equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+img.outset {
+  border: 10px outset #555;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+}
