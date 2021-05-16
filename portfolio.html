@@ -28,65 +28,38 @@
             <a href="contactus.html" title="Go to our contact us page." class="nav" ><strong>Contact Us</strong></a> <!-- Takes to contact us page -->
   </div>
 
+ 
     
-    <div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="https://drive.google.com/thumbnail?id=1-IE5DXwBsDmW6y-q10oOceUWlzDepOTu" title="Winger - David Fusitua" width="200">
-  </div>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="https://drive.google.com/thumbnail?id=1-HQ7BTKpMQ3xY5ZGxYfuuAX28jjPEuDA" title="Dummy Half - Wayde Egan" width="250">
-  </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="https://drive.google.com/thumbnail?id=1-Hd6PdiEheh0wIIUWxSWB0RsZHxk8Qp_" title="Captain - Fullback - Roger Tuivasa-Sheck" width="250">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="https://drive.google.com/thumbnail?id=1-C-NO3hGRxmNI79Ifckg1OufJdD4qqZb" title="Halfback - Sean O'Sullivan" width="250">
-  </div>
+<div class="slideshow-container">
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="https://drive.google.com/thumbnail?id=1-2w-qm9-1ki_OBalQS_a9tZoyD8eLx5k" title="Head coach - Nathan Brown" width="250">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="https://drive.google.com/thumbnail?id=1GJBP1dkbHGC1phn-h4X0Ta9-Qe48U8MZ" title="Addin Fonua-Blake with owner Mark Robinsion" width="250">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://drive.google.com/thumbnail?id=1-2w-qm9-1ki_OBalQS_a9tZoyD8eLx5k" title="Head coach - Nathan Brown" width="350">
+  <div class="text">Head coach - Nathan Brown</div>
+</div>
 
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+      <img class="demo cursor" src="https://drive.google.com/thumbnail?id=1-Hd6PdiEheh0wIIUWxSWB0RsZHxk8Qp_" title="Captain - Fullback - Roger Tuivasa-Sheck" width="350">
+  <div class="text">Captain - Fullback - Roger Tuivasa-Sheck</div>
+</div>
 
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="https://drive.google.com/thumbnail?id=1-IE5DXwBsDmW6y-q10oOceUWlzDepOTu" title="Winger - David Fusitua" width="200" onclick="currentSlide(1)" alt="Winger - David Fusitua">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://drive.google.com/thumbnail?id=1-HQ7BTKpMQ3xY5ZGxYfuuAX28jjPEuDA" title="Dummy Half - Wayde Egan" width="250" onclick="currentSlide(2)" alt="Dummy Half - Wayde Egan">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://drive.google.com/thumbnail?id=1-Hd6PdiEheh0wIIUWxSWB0RsZHxk8Qp_" title="Captain - Fullback - Roger Tuivasa-Sheck" width="250" onclick="currentSlide(3)" alt="Captain - Fullback - Roger Tuivasa-Sheck">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://drive.google.com/thumbnail?id=1-C-NO3hGRxmNI79Ifckg1OufJdD4qqZb" title="Halfback - Sean O'Sullivan" width="250" onclick="currentSlide(4)" alt="Halfback - Sean O'Sullivan">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="https://drive.google.com/thumbnail?id=1-2w-qm9-1ki_OBalQS_a9tZoyD8eLx5k" title="Head coach - Nathan Brown" width="250" onclick="currentSlide(5)" alt="Head coach - Nathan Brown">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="https://drive.google.com/thumbnail?id=1GJBP1dkbHGC1phn-h4X0Ta9-Qe48U8MZ" title="Addin Fonua-Blake with owner Mark Robinsion" width="250" onclick="currentSlide(6)" alt="Addin Fonua-Blake with owner Mark Robinsion">
-    </div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://drive.google.com/thumbnail?id=1GJBP1dkbHGC1phn-h4X0Ta9-Qe48U8MZ" title="Addin Fonua-Blake with owner Mark Robinsion" width="350">
+  <div class="text">Addin Fonua-Blake with owner Mark Robinsion</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 <script>
@@ -104,8 +77,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -116,18 +88,16 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
-    
 
 <p class="pink"> Image Credits to <a href="https://www.photosport.nz/">Photosport NZ</a></p> <!-- Link / credit where got it from -->
     <br> <!-- Spaces between lines -->
     <br>  <!-- Spaces between lines -->
     <br>  <!-- Spaces between lines -->
+    
 <footer> Created by Arishay Reddy © 2021 - <a href="https://www.instagram.com/arishay__reddy/">Instagram.</a></footer> <!-- Links to IG account personal one and who made it and when they made it  -->
 
     
 </body> <!-- End of body code -->
 </html> <!-- End of html code -->
-
