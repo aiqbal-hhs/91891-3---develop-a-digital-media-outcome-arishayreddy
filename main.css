@@ -10,34 +10,33 @@ h2{ /* Beginning of sytle tag for heading 2 locations. */
     text-decoration: underline; /* Underlining the text selected. */
     font-size: 50px; /* How big the size of the font is on the web page. */
 
+
 } /* End of sytle tag for heading 2 locations. */
 
-.buttonone { /* Beginning of sytle tag for the main buttons. */
-    background-color: #fff5;  /* Background colour. */
-    color: black; /* Colour of font. */
-    border-color: black;/* The colour of the button outline. */
-    font-size: 100%; /* How big the size of the font is on the web page. */
-    margin:0; /* Space around the elements e.g. space between other buttons. */
-    padding: 9px; /* How much space there is between the text and the border outline. */
-    cursor: pointer; /* A pointer to indicate there is a link, no change to code because it is a pointer. */
-    border-radius: 25px; /* How rounded the corner is. */
-} /* End of sytle tag for the main buttons. */
+
 button:hover { /* Beginning of sytle tag for the hover over the main buttons. */
-    opacity: 0.7; /* How faded the text is when hovered over. */
+    opacity: 100.7; /* How faded the text is when hovered over. */
+    
 } /* End of sytle tag for the hover over the main buttons. */
 .nav { /* Beginning of sytle tag for the other buttons. */
-    background-color: #fff5;  /* Background colour. */
-    opacity: 200%;
+    background-color: white ;  /* Background colour. */
     color: black; /* Colour of font. */
     font-size: 100%; /* How big the size of the font is on the web page. */
     margin: 7px; /* Space around the elements e.g. space between other buttons. */
-    padding: 0px 7px;  /* How much space there is between the text and the border outline. */
+    padding: 20px;  /* How much space there is between the text and the border outline. */
     cursor: pointer; /* A pointer to indicate there is a link, no change to code because it is a pointer. */
-    border-radius: 25px; /* How rounded the corner is. */
+    border-radius: 50px; /* How rounded the corner is. */
     display: inline-block; /* Prevent overlapping of buttons. */
+    border: 2px solid #4677C8;
+    width: 11%;
 } /* End of sytle tag for the other buttons. */
+
+
 .nav:hover { /* Beginning of sytle tag for the hover over the other buttons. */
-    opacity: 0.7; /* How faded the text is when hovered over. */
+    background-color: darkblue;
+    color: #4677C8;
+    box-shadow: 0 12px 16px 0 , 0 17px 50px 0 darkblue;
+    
 } /* End of sytle tag for the hover over the other buttons. */
 
 
@@ -126,6 +125,7 @@ footer { /* Beginning of sytle tag for the footer of the page. */
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
+  
 }
 
 /* Track */
@@ -136,7 +136,7 @@ footer { /* Beginning of sytle tag for the footer of the page. */
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background:  #4677C8;
   border-radius: 10px;
 }
 
@@ -198,4 +198,57 @@ img.outset {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px)
+}
+
+
+.logo { /* Beginning of sytle tag for the other buttons. */
+
+    
+    display: inline-block; /* Prevent overlapping of buttons. */
+} /* End of sytle tag for the other buttons. */
+
+
+h1 { /* H1 tag shows first and biggest heading / most important. */
+  font-size: 30px;
+  text-decoration: underline;
+  
+}
+
+.logo{ /* Logo area coding. */
+    grid-area: logo;
+    width: 300px;
+    height: 199px;
+    padding:10px;
+    background-color: #4677C8; /* Background colour. */
+border-radius: 60px; /* How rounded the corner is. */
+
+}
+
+
+.center { /* Image which is center. */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+p.pink { /* Point class is pink because its a class which allows different colors. */
+  color: black;
+  font-size: 30px;
+  background-color: #4677C8;
+}
+
+.center { /* Allows for table to be centerd. */
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+h6 { /* Heading 6 which is on about us page. */
+  font-size: 16px;
+  text-align: center;
+}
+
+ td, tr, th { /* This is for table border. */
+  border: 2px solid black;
 }
